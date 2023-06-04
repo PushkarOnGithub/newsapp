@@ -7,7 +7,7 @@ export default class Navbar extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand mx-2" href="/">
             NewsMonkey
           </a>
           <button
