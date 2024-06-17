@@ -7,7 +7,9 @@ import LoadingBar from "react-top-loading-bar";
 
 const App = () => {
   // apikey = process.env.NEWS_API_KEY
-  let apikey = "be52d7e832764e7a83f85bf28ff234e5";
+  const apikeys = ["be52d7e832764e7a83f85bf28ff234e5", "77777cd4c41b4bb3ac51b72bb684dca2"];
+  const randomIndex = Math.floor(Math.random() * apikeys.length);
+  const apikey = apikeys[randomIndex];
   let pageSize = 6;
 
   const [progress, setProgress] = useState(0);

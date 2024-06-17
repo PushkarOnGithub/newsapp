@@ -56,7 +56,7 @@ const News = (props) => {
   };
   return (
     <>
-      <div className="container"><h1 className="text-center" style={{ margin: "65px" }}>
+      <div className="container"><h1 className="text-center" style={{ margin: "110px 0 45px 0" }}>
         NewsMonkey - Top Headlines
       </h1>
       </div> 

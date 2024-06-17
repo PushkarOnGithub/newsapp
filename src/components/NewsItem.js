@@ -18,7 +18,7 @@ const NewsItem = (props) => {
             {title}...
             <span
               className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
-              style={{ zIndex: 1, left: "80%" }}>
+              style={{ zIndex: 1, left: "90%" }}>
               {name.replace(".com", "").replace("www.", "")}
               <span className="visually-hidden">unread messages</span>
             </span>
