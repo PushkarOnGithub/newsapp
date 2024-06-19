@@ -7,10 +7,9 @@ import LoadingBar from "react-top-loading-bar";
 
 const App = () => {
   // apikey = process.env.NEWS_API_KEY
-  const apikeys = ["be52d7e832764e7a83f85bf28ff234e5", "77777cd4c41b4bb3ac51b72bb684dca2"];
+  const apikeys = ["ed6c8110f636f94915b258e81e650938", "c5fd6b304a75fd8f2743aaea7bb20160"];
   const randomIndex = Math.floor(Math.random() * apikeys.length);
   const apikey = apikeys[randomIndex];
-  let pageSize = 6;
 
   const [progress, setProgress] = useState(0);
   return (
@@ -24,8 +23,6 @@ const App = () => {
             path="/"
             element={
               <News
-                pageSize={pageSize}
-                country="in"
                 category="general"
                 key="general"
                 apikey={apikey}
@@ -39,8 +36,6 @@ const App = () => {
             path="/business"
             element={
               <News
-                pageSize={pageSize}
-                country="in"
                 category="business"
                 key="business"
                 apikey={apikey}
@@ -54,8 +49,6 @@ const App = () => {
             path="/entertainment"
             element={
               <News
-                pageSize={pageSize}
-                country="in"
                 category="entertainment"
                 key="entertainment"
                 apikey={apikey}
@@ -69,8 +62,6 @@ const App = () => {
             path="/health"
             element={
               <News
-                pageSize={pageSize}
-                country="in"
                 category="health"
                 key="health"
                 apikey={apikey}
@@ -84,8 +75,6 @@ const App = () => {
             path="/science"
             element={
               <News
-                pageSize={pageSize}
-                country="in"
                 category="science"
                 key="science"
                 apikey={apikey}
@@ -99,8 +88,6 @@ const App = () => {
             path="/sports"
             element={
               <News
-                pageSize={pageSize}
-                country="in"
                 category="sports"
                 key="sports"
                 apikey={apikey}
@@ -114,8 +101,6 @@ const App = () => {
             path="/technology"
             element={
               <News
-                pageSize={pageSize}
-                country="in"
                 category="technology"
                 key="technology"
                 apikey={apikey}
